@@ -1,0 +1,14 @@
+"Variable / Field Name","Form Name","Section Header","Field Type","Field Label","Choices, Calculations, OR Slider Labels","Field Note","Text Validation Type OR Show Slider Number","Text Validation Min","Text Validation Max",Identifier?,"Branching Logic (Show field only if...)","Required Field?","Custom Alignment","Question Number (surveys only)","Matrix Group Name","Matrix Ranking?","Field Annotation"
+record_id,archive_hook_example,,text,"Record ID",,,,,,,,,,,,,
+radio_base,archive_hook_example,"Examples of @ARCHIVE hook",radio,"Here is a normal radio question with options as
+1, a
+2, b
+3, c
+4, d
+5, e
+6, f
+7, g","1, a | 2, b | 3, c | 4, d | 5, e | 6, f | 7, g",,,,,,,,,,,,
+radio,archive_hook_example,,radio,"Here is the same as above, but with the ARCHIVE option added","1, a | 2, b | 3, c | 4, d | 5, e | 6, f | 7, g","Action take is at-ARCHIVE=3,4,5",,,,,,,,,,,"@ARCHIVE=3,4,5"
+dropdown1,archive_hook_example,,dropdown,"Same in dropdown format","1, a | 2, b | 3, c | 4, d | 5, e | 6, f | 7, g","Action take is at-ARCHIVE=3,4,5",,,,,,,,,,,"@ARCHIVE=3,4,5"
+dropdown2,archive_hook_example,,dropdown,"Dropdown with 'auto-complete' like above","1, a | 2, b | 3, c | 4, d | 5, e | 6, f | 7, g","Action take is at-ARCHIVE=3,4,5",autocomplete,,,,,,,,,,"@ARCHIVE=3,4,5"
+cbx,archive_hook_example,,checkbox,"Checkbox values like above","1, a | 2, b | 3, c | 4, d | 5, e | 6, f | 7, g","Action take is at-ARCHIVE=3,4,5",,,,,,,,,,,"@ARCHIVE=4,5,foo"
